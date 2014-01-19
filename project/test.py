@@ -47,11 +47,18 @@ try:
 
 #	print the_data ['language']
 
+	hello = []
 
 #	for keyword in range(0,len(the_data['keywords'])):
 	for keyword in range(0,3):
 		print the_data['keywords'][keyword]['text']	
-    
+   		hello.append(the_data['keywords'][keyword]['text'])
+
+
+	print hello[0]
+	print hello[1]
+	print hello[2]
+
 
 	
 except urllib2.URLError, e:
